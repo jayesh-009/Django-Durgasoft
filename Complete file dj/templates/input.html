@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        {% if send %}
+
+        <h1>Thaanks for provind information </h1>
+
+        <h2>Enter the next student Marks </h2>
+
+        {% else %}
+
+        <h1>Student marks submit form</h1>
+
+        {% endif %}<hr>
+        <form action="" method="POST">
+
+            {{form.as_p}}
+
+            {% csrf_token %}
+
+            <input type="Submit" name="" value="Submit Form">
+        </form>
+    </div>
+    
+</body>
+</html>

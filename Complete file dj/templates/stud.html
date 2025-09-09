@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Student Data is here</h1>
+
+    {% if stud_list %}
+
+    <table border="2px" align="center" margin="auto">
+        <thead>
+            <th>Name  </th>
+            <th>Marks</th>
+
+        </thead>
+
+        {% for stud in stud_list %}
+
+        <tr>
+            <td>{{stud.name}}</td>
+            <td>{{stud.marks}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+
+    <p>No Student Found</p>
+
+    {% endif %}
+</body>
+</html>

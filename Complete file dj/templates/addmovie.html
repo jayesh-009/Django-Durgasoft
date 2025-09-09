@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/min.css">
+    <link rel="stylesheet" href="/static/min.js">
+    <link rel="stylesheet" href="/static/movie.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>Add Movie Information</h1><hr>
+        <form action="" method="post">
+            {{ form.as_p}}
+
+            {% csrf_token %}
+
+            <input type="submit" value="Add Movie" class="btn btn-primary">
+
+        </form>
+
+    </div>
+</body>
+</html>

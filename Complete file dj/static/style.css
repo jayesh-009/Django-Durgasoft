@@ -1,0 +1,12 @@
+img{
+    height: 500px;
+    width: 500px;
+    border: 10px solid yellowgreen;
+
+    margin: 0% 20%;
+
+}
+h1{
+    color: blue;
+    text-align: center;
+}

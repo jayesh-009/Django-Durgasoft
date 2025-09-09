@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/min.css">
+    <link rel="stylesheet" href="/static/min.js">
+    <link rel="stylesheet" href="/static/auth123.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Durga Exams</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/javaexam">Java Exam</a></li>
+                <li><a href="/pythonexam">Python Exam</a></li>
+                <li><a href="/aptiexam">Aptitude Exam</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">SignUp</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/logout">Logout</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    {% block body_block %}
+
+    {% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+    {% block body_block %}
+
+        <div class="container" align="center">
+            <h1>Login to Write Exam.....</h1>
+
+            <form action="" method="post">
+
+                {{form.as_p}}
+
+                {% csrf_token %}
+
+                <button type="submit">Login</button>
+
+
+            </form>
+            <h1>Write your exam very carefully</h1>
+            
+            <br><br><br><br><br><br>
+
+            <a href="/logout" class="btn btn-primary btn-lg btn-sucesss">
+                Logout
+            </a>
+        </div>
+    {% endblock %}
+
+    
